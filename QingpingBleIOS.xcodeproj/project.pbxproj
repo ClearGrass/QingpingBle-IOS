@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		962BC0F328BFA88000560753 /* QPPeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962BC0F228BFA88000560753 /* QPPeripheralDelegate.swift */; };
+		962BC0F528BFAC2200560753 /* QPCentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962BC0F428BFAC2200560753 /* QPCentralManagerDelegate.swift */; };
+		962BC0F728BFCD8F00560753 /* Data-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962BC0F628BFCD8F00560753 /* Data-extension.swift */; };
+		962BC0F928BFCDAB00560753 /* String-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962BC0F828BFCDAB00560753 /* String-extension.swift */; };
+		A18672290A6A9706985EA926 /* Pods_QingpingBleIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13E76C6E2EDC8829220DAF3 /* Pods_QingpingBleIOS.framework */; };
+		B5444A3328B85F7600A2515F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5444A3228B85F7600A2515F /* AppDelegate.swift */; };
+		B5444A3528B85F7600A2515F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5444A3428B85F7600A2515F /* SceneDelegate.swift */; };
+		B5444A3728B85F7600A2515F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5444A3628B85F7600A2515F /* ViewController.swift */; };
+		B5444A3A28B85F7600A2515F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5444A3828B85F7600A2515F /* Main.storyboard */; };
+		B5444A3C28B85F7900A2515F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5444A3B28B85F7900A2515F /* Assets.xcassets */; };
+		B5444A4828B861A900A2515F /* QPProductID.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5444A4728B861A900A2515F /* QPProductID.swift */; };
+		B5444A4C28B864DB00A2515F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5444A4B28B864DB00A2515F /* CoreBluetooth.framework */; };
+		B56D08D928B8C4F700CEFC23 /* QPUUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56D08D828B8C4F700CEFC23 /* QPUUID.swift */; };
+		B5AF6FC228BDC1300038E59F /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF6FC128BDC1300038E59F /* Util.swift */; };
+		B5AF6FC528BDC1900038E59F /* QPDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF6FC428BDC1900038E59F /* QPDevice.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		962BC0F228BFA88000560753 /* QPPeripheralDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QPPeripheralDelegate.swift; sourceTree = "<group>"; };
+		962BC0F428BFAC2200560753 /* QPCentralManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QPCentralManagerDelegate.swift; sourceTree = "<group>"; };
+		962BC0F628BFCD8F00560753 /* Data-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data-extension.swift"; sourceTree = "<group>"; };
+		962BC0F828BFCDAB00560753 /* String-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-extension.swift"; sourceTree = "<group>"; };
+		A26CEE786691B06DAD72E178 /* Pods-QingpingBleIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QingpingBleIOS.release.xcconfig"; path = "Target Support Files/Pods-QingpingBleIOS/Pods-QingpingBleIOS.release.xcconfig"; sourceTree = "<group>"; };
+		B5444A2F28B85F7600A2515F /* QingpingBleIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QingpingBleIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5444A3228B85F7600A2515F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5444A3428B85F7600A2515F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B5444A3628B85F7600A2515F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5444A3928B85F7600A2515F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5444A3B28B85F7900A2515F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5444A4028B85F7900A2515F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5444A4728B861A900A2515F /* QPProductID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QPProductID.swift; sourceTree = "<group>"; };
+		B5444A4B28B864DB00A2515F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		B5444A4D28B867CA00A2515F /* QingpingBleIOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QingpingBleIOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		B56D08D828B8C4F700CEFC23 /* QPUUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QPUUID.swift; sourceTree = "<group>"; };
+		B5AF6FC128BDC1300038E59F /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		B5AF6FC428BDC1900038E59F /* QPDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QPDevice.swift; sourceTree = "<group>"; };
+		D13E76C6E2EDC8829220DAF3 /* Pods_QingpingBleIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QingpingBleIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF1860F9F0C9B18A261B7F8 /* Pods-QingpingBleIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QingpingBleIOS.debug.xcconfig"; path = "Target Support Files/Pods-QingpingBleIOS/Pods-QingpingBleIOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5444A2C28B85F7600A2515F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5444A4C28B864DB00A2515F /* CoreBluetooth.framework in Frameworks */,
+				A18672290A6A9706985EA926 /* Pods_QingpingBleIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76DF4BD4865007FB9096108D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDF1860F9F0C9B18A261B7F8 /* Pods-QingpingBleIOS.debug.xcconfig */,
+				A26CEE786691B06DAD72E178 /* Pods-QingpingBleIOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B5444A2628B85F7600A2515F = {
+			isa = PBXGroup;
+			children = (
+				B5444A3128B85F7600A2515F /* QingpingBleIOS */,
+				B5444A3028B85F7600A2515F /* Products */,
+				B5444A4A28B864DB00A2515F /* Frameworks */,
+				76DF4BD4865007FB9096108D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		B5444A3028B85F7600A2515F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5444A2F28B85F7600A2515F /* QingpingBleIOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5444A3128B85F7600A2515F /* QingpingBleIOS */ = {
+			isa = PBXGroup;
+			children = (
+				B5AF6FC328BDC17E0038E59F /* Model */,
+				B5444A4628B8616700A2515F /* Helper */,
+				B5444A3228B85F7600A2515F /* AppDelegate.swift */,
+				B5444A3428B85F7600A2515F /* SceneDelegate.swift */,
+				B5444A3628B85F7600A2515F /* ViewController.swift */,
+				B5444A3828B85F7600A2515F /* Main.storyboard */,
+				B5444A3B28B85F7900A2515F /* Assets.xcassets */,
+				B5444A4028B85F7900A2515F /* Info.plist */,
+				B5444A4D28B867CA00A2515F /* QingpingBleIOS-Bridging-Header.h */,
+			);
+			path = QingpingBleIOS;
+			sourceTree = "<group>";
+		};
+		B5444A4628B8616700A2515F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B5444A4728B861A900A2515F /* QPProductID.swift */,
+				B56D08D828B8C4F700CEFC23 /* QPUUID.swift */,
+				B5AF6FC128BDC1300038E59F /* Util.swift */,
+				962BC0F628BFCD8F00560753 /* Data-extension.swift */,
+				962BC0F828BFCDAB00560753 /* String-extension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B5444A4A28B864DB00A2515F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5444A4B28B864DB00A2515F /* CoreBluetooth.framework */,
+				D13E76C6E2EDC8829220DAF3 /* Pods_QingpingBleIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5AF6FC328BDC17E0038E59F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5AF6FC428BDC1900038E59F /* QPDevice.swift */,
+				962BC0F228BFA88000560753 /* QPPeripheralDelegate.swift */,
+				962BC0F428BFAC2200560753 /* QPCentralManagerDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5444A2E28B85F7600A2515F /* QingpingBleIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5444A4328B85F7900A2515F /* Build configuration list for PBXNativeTarget "QingpingBleIOS" */;
+			buildPhases = (
+				E99433A15E05E635E30C9ED5 /* [CP] Check Pods Manifest.lock */,
+				B5444A2B28B85F7600A2515F /* Sources */,
+				B5444A2C28B85F7600A2515F /* Frameworks */,
+				B5444A2D28B85F7600A2515F /* Resources */,
+				CAE2A41CD3A20EF1C33C7937 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QingpingBleIOS;
+			productName = QingpingBleIOS;
+			productReference = B5444A2F28B85F7600A2515F /* QingpingBleIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5444A2728B85F7600A2515F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					B5444A2E28B85F7600A2515F = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = B5444A2A28B85F7600A2515F /* Build configuration list for PBXProject "QingpingBleIOS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5444A2628B85F7600A2515F;
+			productRefGroup = B5444A3028B85F7600A2515F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5444A2E28B85F7600A2515F /* QingpingBleIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5444A2D28B85F7600A2515F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5444A3C28B85F7900A2515F /* Assets.xcassets in Resources */,
+				B5444A3A28B85F7600A2515F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CAE2A41CD3A20EF1C33C7937 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QingpingBleIOS/Pods-QingpingBleIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QingpingBleIOS/Pods-QingpingBleIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QingpingBleIOS/Pods-QingpingBleIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E99433A15E05E635E30C9ED5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QingpingBleIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5444A2B28B85F7600A2515F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				962BC0F928BFCDAB00560753 /* String-extension.swift in Sources */,
+				962BC0F528BFAC2200560753 /* QPCentralManagerDelegate.swift in Sources */,
+				B5444A3728B85F7600A2515F /* ViewController.swift in Sources */,
+				B5AF6FC228BDC1300038E59F /* Util.swift in Sources */,
+				962BC0F728BFCD8F00560753 /* Data-extension.swift in Sources */,
+				B5AF6FC528BDC1900038E59F /* QPDevice.swift in Sources */,
+				B5444A3328B85F7600A2515F /* AppDelegate.swift in Sources */,
+				B5444A3528B85F7600A2515F /* SceneDelegate.swift in Sources */,
+				962BC0F328BFA88000560753 /* QPPeripheralDelegate.swift in Sources */,
+				B5444A4828B861A900A2515F /* QPProductID.swift in Sources */,
+				B56D08D928B8C4F700CEFC23 /* QPUUID.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B5444A3828B85F7600A2515F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5444A3928B85F7600A2515F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5444A4128B85F7900A2515F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5444A4228B85F7900A2515F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5444A4428B85F7900A2515F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDF1860F9F0C9B18A261B7F8 /* Pods-QingpingBleIOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 202208261050;
+				DEVELOPMENT_TEAM = VE69RQCDF9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QingpingBleIOS/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "是否允许蓝牙蓝牙连接？";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "是否允许蓝牙连接？";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qingping.QingpingBleIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "QingpingBleIOS/QingpingBleIOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B5444A4528B85F7900A2515F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A26CEE786691B06DAD72E178 /* Pods-QingpingBleIOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 202208261050;
+				DEVELOPMENT_TEAM = VE69RQCDF9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QingpingBleIOS/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "是否允许蓝牙蓝牙连接？";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "是否允许蓝牙连接？";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qingping.QingpingBleIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "QingpingBleIOS/QingpingBleIOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5444A2A28B85F7600A2515F /* Build configuration list for PBXProject "QingpingBleIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5444A4128B85F7900A2515F /* Debug */,
+				B5444A4228B85F7900A2515F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5444A4328B85F7900A2515F /* Build configuration list for PBXNativeTarget "QingpingBleIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5444A4428B85F7900A2515F /* Debug */,
+				B5444A4528B85F7900A2515F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5444A2728B85F7600A2515F /* Project object */;
+}
