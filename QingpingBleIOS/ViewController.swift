@@ -8,7 +8,6 @@
 import UIKit
 import SnapKit
 import CoreBluetooth
-import RxSwift
 
 
 class ViewController: UIViewController {

@@ -64,7 +64,7 @@ class QPCentralManagerDelegate: NSObject, CBCentralManagerDelegate {
         guard let fdcdData = data[QPUUID.QP_UUID] as? Data else {return}
         
         //解析广播，device 中有mac地址
-        guard let device:QPDevice = Util.parsePeripherals(fdcdData) else {return}
+        let device  = QPDevice(fdcdData)
         
         //2. 扫描到目标设备（解析后的isBind为true——即为绑定包，且 productId为 青萍空气检测仪 Lite）
         if device.productID == QPProductID.CGDN1 && device.isBind {
