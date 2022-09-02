@@ -8,15 +8,25 @@
 import Foundation
 import CoreBluetooth
 
+typealias CancelConnectBlock = (_ peripheral: CBPeripheral) -> Void
+
 class QPPeripheralDelegate: NSObject, CBPeripheralDelegate {
-    var peripheral:CBPeripheral!
-    var baseWrite:CBCharacteristic?
-    var myWrite:CBCharacteristic?
+    public var peripheral:CBPeripheral!
+    private var baseWrite:CBCharacteristic?
+    private var myWrite:CBCharacteristic?
+    private var cancelConnect: CancelConnectBlock?
     
     //每包发送的最大字节数
-    let MAX_BUFFER_SIZE = 20
-    //
-    var didUpdateNotificationStateForCharacteristics:[CBUUID] = []
+    private let MAX_BUFFER_SIZE = 20
+    
+    private var didUpdateNotificationStateForCharacteristics:[CBUUID] = []
+    
+    /**
+     设置断开连接回调
+     */
+    func setCancalconnect(_ block: CancelConnectBlock?) {
+        cancelConnect = block
+    }
     
     /**
      服务发现成功后回调
@@ -26,7 +36,7 @@ class QPPeripheralDelegate: NSObject, CBPeripheralDelegate {
             print("发现服务失败", error)
             return
         }
-    
+        
         print("发现服务成功，开始发现特征")
         
         //5. 发现青萍服务下的特征（特征定义在 QPUUID中）
@@ -96,9 +106,11 @@ class QPPeripheralDelegate: NSObject, CBPeripheralDelegate {
             verifyToken()
         }else if result.starts(with: "04ff020000") { //验证token成功
             print("验证token成功")
-            setWiFi("Xiaomi_DC9F", "sdjm_yfqb")
+            setWiFi("OpenWrt", "88643721")
         }else if result.starts(with: "020101") {
             print("连接成功")
+            //10. 断开连接（这一步很重要，如果不执行的话，会导致设备不连接 MQTT或者接收不到采集、上报评率修改的命令）
+            self.cancelConnect?(peripheral)
         }
         
     }

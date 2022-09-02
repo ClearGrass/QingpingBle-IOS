@@ -31,6 +31,7 @@ class QPCentralManagerDelegate: NSObject, CBCentralManagerDelegate {
      * 8. 验证token （调用的QPUUID.base_write_characteristic 对应的特征写，在base_notify_characteristic中监听验证结果结果 —— 04ff020000 为成功，其他为失败）
      * 注意：这里待验证的token是第7步，设置的那个随机token
      * 9. 连接 Wi-Fi （调用的QPUUID.my_write_characteristic 对应的特征写，在my_notify_characteristic中监听连接结果， 020101 为 Wi-Fi 连接成功，其他为失败，注意有时候密码输入错误时，设备也有可能不返回错误码，所以在发送连接 Wi-Fi 命令时候最好设置一个 timer，timer 超时也被认为是连接 Wi-Fi 失败 ）
+     * 10. 断开连接（这一步很重要，如果不执行的话，会导致设备不连接 MQTT 或者接收不到采集、上报评率修改的命令）
      */
     public func startScan() {
         print("开始扫描")
@@ -43,6 +44,7 @@ class QPCentralManagerDelegate: NSObject, CBCentralManagerDelegate {
     public func stopScan() {
         print("停止扫描")
         self.myCentralManager.stopScan()
+        
     }
     
     
@@ -89,6 +91,12 @@ class QPCentralManagerDelegate: NSObject, CBCentralManagerDelegate {
             
             //4. 发现青萍服务（QPUUID.qp_service_uuid）
             peripheral.discoverServices([QPUUID.qp_service_uuid])
+            
+            //设置断开连接回调，连接 WI-Fi 成功后会调用此方法断开连接
+            peripheralDelegate.setCancalconnect { peripheral in
+                self.myCentralManager.cancelPeripheralConnection(peripheral)
+            }
+            
         }
     }
     
@@ -104,6 +112,9 @@ class QPCentralManagerDelegate: NSObject, CBCentralManagerDelegate {
      */
     func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
         print("已断开连接：", peripheral, currentDevice)
+        peripheral.delegate = nil
+        peripheralDelegate.setCancalconnect(nil)
+        
     }
     
 }
